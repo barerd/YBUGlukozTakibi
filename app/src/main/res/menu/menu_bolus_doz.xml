@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.agrimerkezi.ybuglukoztakibi.BolusDoz">
+
+    <item
+        android:id="@+id/infuzyonDozu"
+        android:title="@string/infuzyon_dozu" />
+
+    <item
+        android:id="@+id/klavuz"
+        android:title="@string/klavuz" />
+
+</menu>

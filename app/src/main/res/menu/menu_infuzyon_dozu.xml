@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".AnaEkran">
+
+    <item
+        android:id="@+id/bolusDoz"
+        android:title="@string/bolus_doz" />
+
+    <item
+        android:id="@+id/klavuz"
+        android:title="@string/klavuz" />
+
+</menu>
