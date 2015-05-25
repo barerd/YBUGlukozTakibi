@@ -1,7 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.agrimerkezi.ybuglukoztakibi.Klavuz">
+
+    <item
+        android:id="@+id/tedaviBaslangici"
+        android:title="@string/tedavi_baslangici" />
 
     <item
         android:id="@+id/infuzyonDozu"

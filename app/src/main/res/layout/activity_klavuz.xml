@@ -5,15 +5,241 @@
     android:background="#FFFFFF"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        tools:context="com.agrimerkezi.ybuglukoztakibi.Klavuz">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
 
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/aciklama"
+            android:padding="15dp"
+            android:text="@string/kullanim_aciklamasi" />
 
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/aciklama"
+            android:gravity="center" >
 
+            <View
+                android:layout_height="2dip"
+                android:background="#FF0000" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/klavuz_tablosu_baslik"
+                    android:layout_span="3"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF0000" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/baslik1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="@dimen/ara_bosluk" />
+
+                <TextView
+                    android:text="@string/baslik2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:singleLine="false" />
+
+                <TextView
+                    android:layout_width="@dimen/ara_bosluk" />
+
+                <TextView
+                    android:text="@string/baslik3"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/satir1sutun1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="@dimen/ara_bosluk" />
+
+                <TextView
+                    android:text="@string/satir1sutun2"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="@dimen/ara_bosluk" />
+
+                <TextView
+                    android:text="@string/satir1sutun3"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/satir2sutun1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="@dimen/ara_bosluk" />
+
+                <TextView
+                    android:text="@string/satir2sutun2"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="@dimen/ara_bosluk" />
+
+                <TextView
+                    android:text="@string/satir2sutun3"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/satir3sutun1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="@dimen/ara_bosluk" />
+
+                <TextView
+                    android:text="@string/satir3sutun2"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="@dimen/ara_bosluk" />
+
+                <TextView
+                    android:text="@string/satir3sutun3"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/satir4sutun1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="@dimen/ara_bosluk" />
+
+                <TextView
+                    android:text="@string/satir4sutun2"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="@dimen/ara_bosluk" />
+
+                <TextView
+                    android:text="@string/satir4sutun3"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/satir5sutun1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="@dimen/ara_bosluk" />
+
+                <TextView
+                    android:text="@string/satir5sutun2"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="@dimen/ara_bosluk" />
+
+                <TextView
+                    android:text="@string/satir5sutun3"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/satir6sutun1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="@dimen/ara_bosluk" />
+
+                <TextView
+                    android:text="@string/satir6sutun2"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="@dimen/ara_bosluk" />
+
+                <TextView
+                    android:text="@string/satir6sutun3"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+
+        </TableLayout>
     </RelativeLayout>
 </ScrollView>

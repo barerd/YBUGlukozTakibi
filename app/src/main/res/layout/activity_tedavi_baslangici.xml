@@ -13,12 +13,12 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:paddingBottom="@dimen/activity_vertical_margin"
-        tools:context="com.agrimerkezi.ybuglukoztakibi.BolusDoz">
+        tools:context="com.agrimerkezi.ybuglukoztakibi.TedaviBaslangici">
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="120dp"
-            android:text="@string/bolus_doz_baslik"
+            android:text="@string/title_activity_tedavi_baslangici"
             android:textSize="30sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -66,14 +66,53 @@
             android:layout_marginTop="15dp"
             android:layout_below="@+id/kilo" />
 
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/travma"
+            android:id="@+id/travma"
+            android:textOn="@string/travma_yok"
+            android:textOff="@string/travma_var"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/cinsiyet" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diabet_oykusu"
+            android:layout_below="@+id/travma">
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tip_1_dm"
+                android:text="@string/tip_1_dm"
+                android:layout_marginTop="15dp" />
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tip_2_dm"
+                android:text="@string/tip_2_dm"
+                android:layout_marginTop="15dp" />
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/dm_yok"
+                android:text="@string/dm_yok"
+                android:layout_marginTop="15dp" />
+
+        </RadioGroup>
+
         <Button
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:text="@string/hesapla"
             android:id="@+id/tus"
-            android:onClick="bolusDozHesapla"
+            android:onClick="tedaviyiBelirle"
             android:layout_marginTop="15dp"
-            android:layout_below="@+id/cinsiyet" />
+            android:layout_below="@+id/diabet_oykusu" />
 
     </RelativeLayout>
 </ScrollView>

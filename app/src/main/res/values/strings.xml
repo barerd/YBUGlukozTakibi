@@ -23,35 +23,36 @@
     <string name="klavuz_baslik">Kullanım Klavuzu</string>
 
     //Klavuz tablosu
-    <string name="baslik1">Kan şekeri</string>
-    <string name="baslik2">Bolus insülin dozu (IU)</string>
-    <string name="baslik3">İnfüzyon dozu (ml/saat)</string>
+    <string name="kullanim_aciklamasi">Bu programdaki hesaplar kabaca aşağıdaki tabloya göre yapılmıştır.\nFakat hastaların boy, kilo, cinsiyet ve hastalıklarına göre modifiye edilmiştir.\n\nBu değişiklikler sonucunda, bu programdaki tüm hesaplamalar 4 ila 6 saat aralıklarla yapılan kan şekeri ölçümlerine dayanmaktadır.\n\nHerhangi bir nedenle 1 ila 3 saat gibi kısa aralıklarla ölçülen kan şekerine göre doz hesaplaması yapılırsa hastada hipoglisemi gelişmesi kaçınılmaz olacaktır.\n\nBu nedenle, bu programda önerilen insülin dozları, sadece YBÜ\'ne yatmadan önce de insülin iğnesi kullandığı bilinen hastalara 6x1 kan şekeri takibi uygulanması, diğer tüm hastalara 4x1 kan şekeri takibi uygulanması halinde geçerli olabilecektir.</string>
+    <string name="baslik1">Kan şekeri\n(mg/dl)</string>
+    <string name="baslik2">Bolus insülin\ndozu (IU)</string>
+    <string name="baslik3">İnfüzyon dozu\n(ml/saat)</string>
 
-    <string name="satir1sutun1">117–143 mg/dl</string>
-    <string name="satir1sutun2">0 IU</string>
-    <string name="satir1sutun3">1 ml/saat</string>
+    <string name="satir1sutun1">117–143</string>
+    <string name="satir1sutun2">0</string>
+    <string name="satir1sutun3">1</string>
 
-    <string name="satir2sutun1">144–179 mg/dl</string>
-    <string name="satir2sutun2">5 IU</string>
-    <string name="satir2sutun3">1 ml/saat</string>
+    <string name="satir2sutun1">144–179</string>
+    <string name="satir2sutun2">5</string>
+    <string name="satir2sutun3">1</string>
 
-    <string name="satir3sutun1">180–233 mg/dl</string>
-    <string name="satir3sutun2">7 IU</string>
-    <string name="satir3sutun3">2 ml/saat</string>
+    <string name="satir3sutun1">180–233</string>
+    <string name="satir3sutun2">7</string>
+    <string name="satir3sutun3">2</string>
 
-    <string name="satir4sutun1">234–287 mg/dl</string>
-    <string name="satir4sutun2">10 IU</string>
-    <string name="satir4sutun3">3 ml/saat</string>
+    <string name="satir4sutun1">234–287</string>
+    <string name="satir4sutun2">10</string>
+    <string name="satir4sutun3">3</string>
 
-    <string name="satir5sutun1">288–359 mg/dl</string>
-    <string name="satir5sutun2">13 IU</string>
-    <string name="satir5sutun3">4 ml/saat</string>
+    <string name="satir5sutun1">288–359</string>
+    <string name="satir5sutun2">13</string>
+    <string name="satir5sutun3">4</string>
 
-    <string name="satir6sutun1">>360 mg/dl</string>
-    <string name="satir6sutun2">15 IU</string>
-    <string name="satir6sutun3">5 ml/saat</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="satir6sutun1">>360</string>
+    <string name="satir6sutun2">15</string>
+    <string name="satir6sutun3">5</string>
+
+    <string name="klavuz_tablosu_baslik">İnsülin İnfüzyonu Başlangıç Şeması</string>
     <string name="title_activity_klavuz">Klavuz</string>
     <string name="title_activity_bolus_doz">BolusDoz</string>
 
@@ -63,4 +64,16 @@
     <string name="cinsiyet">Cinsiyet</string>
     <string name="kadin">Kadın</string>
     <string name="erkek">Erkek</string>
+
+    //Tedavi baslangici başlığı
+    <string name="tedavi_baslangici">Yeni Yatan Hastada Tedavi Başlangıcı</string>
+
+    <string name="title_activity_tedavi_baslangici">YBÜ\'ne Yeni Yatırılan Hastada Tedavi Başlangıcı</string>
+    <string name="tip_1_dm">İnsülin kullanan hasta</string>
+    <string name="tip_2_dm">Şeker hapı kullanan hasta</string>
+    <string name="dm_yok">Diabet öyküsü yok</string>
+
+    <string name="travma">Travma</string>
+    <string name="travma_yok">Travma yok</string>
+    <string name="travma_var">Travma hastası</string>
 </resources>

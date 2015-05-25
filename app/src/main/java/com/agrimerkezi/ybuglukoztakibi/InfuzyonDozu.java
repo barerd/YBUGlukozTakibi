@@ -186,6 +186,9 @@ public class InfuzyonDozu extends ActionBarActivity {
         } else if (id == R.id.bolusDoz) {
             Intent bolusDoz = new Intent(this, BolusDoz.class);
             startActivity(bolusDoz);
+        } else if (id == R.id.tedaviBaslangici) {
+            Intent tedaviBaslangici = new Intent(this, TedaviBaslangici.class);
+            startActivity(tedaviBaslangici);
         }
 
         return super.onOptionsItemSelected(item);

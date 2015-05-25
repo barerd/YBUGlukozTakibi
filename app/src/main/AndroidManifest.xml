@@ -24,6 +24,10 @@
             android:name=".BolusDoz"
             android:label="@string/bolus_doz" >
         </activity>
+        <activity
+            android:name=".TedaviBaslangici"
+            android:label="@string/title_activity_tedavi_baslangici" >
+        </activity>
     </application>
 
 </manifest>

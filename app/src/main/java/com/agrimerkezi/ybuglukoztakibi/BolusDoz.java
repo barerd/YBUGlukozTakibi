@@ -29,17 +29,17 @@ public class BolusDoz extends ActionBarActivity {
         int iBoy = Integer.parseInt(boy.getText().toString());
         int iKilo = Integer.parseInt(kilo.getText().toString());
 
-        double sonuc = gerekenDozuHesapla(duzeltilmisKiloHesapla(idealKiloHesapla(iBoy, iKilo, cinsiyet)), (iSimdikiKS - 110));
+        double sonuc = gerekenDozuHesapla(duzeltilmisKiloHesapla(idealKiloHesapla(iBoy, cinsiyet), iKilo), (iSimdikiKS - 110));
         int iSonuc = (int) sonuc;
-        String aciklama = Integer.toString(iSonuc) + " IU Humulin-R IV";
+        String aciklama = Integer.toString(iSonuc) + " IU Humulin-R IV bolus yap";
 
         AlertDialog.Builder popup = new AlertDialog.Builder(BolusDoz.this);
         popup.setMessage(aciklama);
         popup.show();
     }
 
-    public double idealKiloHesapla(int boy, int kilo, Switch cinsiyet) {
-        double idBW = 0;
+    public double idealKiloHesapla(int boy, Switch cinsiyet) {
+        double idBW;
         if (cinsiyet.isChecked() && boy > 150) {
             idBW = 50 + ((boy - 150) * 2.3);
         } else if (cinsiyet.isChecked() && boy <= 150) {
@@ -52,13 +52,13 @@ public class BolusDoz extends ActionBarActivity {
         return idBW;
     }
 
-    public double duzeltilmisKiloHesapla(double idBW) {
-        return idBW + (0.4 * idBW);
+    public double duzeltilmisKiloHesapla(double idBW, int iKilo) {
+        return idBW + (0.4 * (iKilo - idBW));
     }
 
     public double gerekenDozuHesapla(double adjBW, int fark) {
 //        fark: 110 mg/dl uzeri kan sekeri
-        return (fark / (1800 / adjBW));
+        return ((fark * 0.55) / (1800 / adjBW));
     }
 
     @Override
@@ -82,6 +82,9 @@ public class BolusDoz extends ActionBarActivity {
         } else if (id == R.id.infuzyonDozu) {
             Intent infuzyonDozu = new Intent(this, InfuzyonDozu.class);
             startActivity(infuzyonDozu);
+        } else if (id == R.id.tedaviBaslangici) {
+            Intent tedaviBaslangici = new Intent(this, TedaviBaslangici.class);
+            startActivity(tedaviBaslangici);
         }
 
         return super.onOptionsItemSelected(item);

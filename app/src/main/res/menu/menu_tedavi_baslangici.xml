@@ -1,9 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" tools:context=".AnaEkran">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.agrimerkezi.ybuglukoztakibi.TedaviBaslangici">
 
     <item
-        android:id="@+id/tedaviBaslangici"
-        android:title="@string/tedavi_baslangici" />
+        android:id="@+id/infuzyonDozu"
+        android:title="@string/infuzyon_dozu" />
 
     <item
         android:id="@+id/bolusDoz"
